@@ -1,2 +1,2 @@
-# math
+# Math
 Math-related code
