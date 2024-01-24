@@ -8,6 +8,8 @@ int_64 factF(int_64 n, int_64 a);
 int_64 fact(int_64 n);
 int binomial(int n, int p);
 
+// TODO: Refazer em cpp de uma forma melhor
+
 int main() {
     int n, *v;
     char s;
