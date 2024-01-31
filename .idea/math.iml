@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module classpath="CMake" type="CPP_MODULE" version="4">
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/Python" />
+        <option value="$MODULE_DIR$/C_Cpp" />
+      </list>
+    </option>
+  </component>
+</module>
