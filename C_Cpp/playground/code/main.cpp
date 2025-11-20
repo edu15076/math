@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <math.hpp>
-#include <math.h>
 #include <cstdint>
 
 #define _ std::ios::sync_with_stdio(false); std::cin.tie(NULL); std::cout.tie(NULL);
