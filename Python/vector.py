@@ -105,14 +105,14 @@ class VectorSpace:
             Add this Vector with w.<br>
             This Vector and w are not changed in this method.<br>
             @param w: A Vector.
-            @return: The adition of this Vector with w.
+            @return: The addition of this Vector with w.
             """
             self._verify_vector_space(w)
             return self._op(copy(self), w, op=lambda x, y, i: x._v[i] + y._v[i])
 
         def __isub__(self, w):
             """
-            Subract this Vector with w.<br>
+            Subtract this Vector with w.<br>
             @param w: A Vector.
             @return: The subtraction of this Vector with w.
             """
@@ -121,7 +121,7 @@ class VectorSpace:
 
         def __sub__(self, w):
             """
-            Subract this Vector with w.<br>
+            Subtract this Vector with w.<br>
             This Vector and w are not changed in this method.<br>
             @param w: A Vector.
             @return: The subtraction of this Vector with w.
@@ -204,7 +204,7 @@ class VectorSpace:
 
         def __gt__(self, b):
             """
-            A Vector is greater than another Vector if its norm is greater than the orther.<br>
+            A Vector is greater than another Vector if its norm is greater than the other.<br>
             @param b: A Vector.
             @return: Whether this Vector is greater than b.
             """
@@ -212,7 +212,7 @@ class VectorSpace:
 
         def __lt__(self, b):
             """
-            A Vector is lesser than another Vector if its norm is lesser than the orther.<br>
+            A Vector is lesser than another Vector if its norm is lesser than the other.<br>
             @param b: A Vector.
             @return: Whether this Vector is lesser than b.
             """
@@ -251,7 +251,7 @@ class VectorSpace:
             """
             If w is None it is assumed to be the sum of all the canonical vectors of dimension n, but the last dimension.
             @param w: A Vector.
-            @return: The sine of the angle bettewn this Vector and w.
+            @return: The sine of the angle between this Vector and w.
             """
             if w is None:
                 w = self._vs.create_vector_equal_components(self._vs.field.unit)
@@ -262,7 +262,7 @@ class VectorSpace:
             """
             If w is None it is assumed to be the sum of all the canonical vectors of dimension n, but the last dimension.
             @param w: A Vector.
-            @return: The cosine of the angle bettewn this Vector and w.
+            @return: The cosine of the angle between this Vector and w.
             """
             if w is None:
                 w = self._vs.create_vector_equal_components(self._vs.field.unit)
@@ -273,7 +273,7 @@ class VectorSpace:
             """
             If w is None it is assumed to be the sum of all the canonical vectors of dimension n, but the last dimension.
             @param w: A Vector.
-            @return: The angle bettewn this Vector and w.
+            @return: The angle between this Vector and w.
             """
             if w is None:
                 w = self._vs.create_vector_equal_components(self._vs.field.unit)
@@ -371,7 +371,7 @@ class VectorSpace:
         """
         Create a Vector with the angles.
         @param size:
-        @param angles: The angles in realtion to each canonical Vector of this Vector's dimension, you can miss the last
+        @param angles: The angles in relation to each canonical Vector of this Vector's dimension, you can miss the last
         angle.
         @return: The Vector.
         """
@@ -402,8 +402,8 @@ class VectorSpace:
 
     def create_vector_canonical_base(self, key: int):
         """
-        Get a canonical base whith unit at key and with dimension n.
-        @param key: The position to insert the unit, strarting from 0 and ending on n - 1.
+        Get a canonical base with unit at key and with dimension n.
+        @param key: The position to insert the unit, starting from 0 and ending on n - 1.
         @return: The canonical base.
         """
 
